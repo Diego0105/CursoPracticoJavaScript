@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="RetoAhorroPorMes.css">
+    <title>Calcula la ganancia por mes de tu empresa</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Calcula el ahorro recomendado con tu salario y gastos por mes
+        </h1>
+        <p>Calculadora diseñada para hacerte las cuentas más sencillas</p>
+        <p>Hecha por: Diego Alejandro Pérez Cardona Curso Práctico JavaScript</p>
+    </header>
+
+
+    <section class="sectionContent">
+        <h2>Introduce los valores solicitados para hacer tu calculo de ahorro</h2>
+
+        <form>
+            <label for="InputSalary">Escribe el valor de tu salario mensual</label>
+            <input id="InputSalary" type="number">
+
+            <label for="InputExpenses">Escribe el total de tus gastos mensual</label>
+            <input id="InputExpenses" type="number">
+            
+            <button type="button" onclick="onClickButtonSavings()">
+                Calcular ahorro por mes
+            </button>
+
+            <p id="ResultP"></p>
+        </form>
+    </section>
+
+
+    <script src="RetoAhorroPorMes.js"></script>
+    
+</body>
+</html>

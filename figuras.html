@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos.css">
+    <title>Figuras geometricas | Curso practico de JavaScript en Platzi </title>
+</head>
+<body>
+    <div class="encabezado">
+        <h1>
+            Geometric figures
+        </h1>
+        <p>This is the first workshop of the JavaScript practical course</p>
+        <p>Made by: Diego Alejandro Pérez Cardona</p>
+        <p>Diego's Company</p>
+    </div>
+    
+    <div class="figuras-container">
+    
+
+        
+        <div class="seccionCuadrado">
+            <h2> Find the area and perimeter of a square</h2>
+            <form class="form-cuadrado"> 
+                <img src="https://media.istockphoto.com/videos/abstract-neon-square-frame-video-id1166100884?b=1&k=20&m=1166100884&s=640x640&h=8OXJYPvjfOId95cmMZdnuM-_VXk8GjO-PwkuvqVfnYE=" alt="square">
+                <label for="InputCuadrado">
+                    Write how long each side of your square is:
+                </label>
+                    <input id="InputCuadrado" type="number"/>
+                    <button type="button" onclick="calcularPerimetroCuadrado()">
+                        Calculate the perimeter
+                    </button>
+                    <button type="button" onclick="calcularAreaCuadrado()">
+                        Calculate area 
+                    </button>
+            </form>
+        </div>
+        
+
+
+        <div class="seccionTriangulo">
+            <h2> Calculate the area and perimeter of a Triangle</h2>
+            <form class="form-triangulo">
+                <img src="https://i.pinimg.com/originals/06/1b/28/061b28d263eccc6d9f3976a2ec1a44ee.jpg" alt="triangle">
+                <label for="InputTrianguloLado1">
+                    Write how long the first side of your triangle is:
+                    <input id="InputTrianguloLado1" type="number"/> 
+                </label>
+                <label for="InputTrianguloLado2">
+                    Write how long the second side of your triangle is:
+                    <input id="InputTrianguloLado2" type="number"/>
+                </label>
+                    Write how long the base of your triangle is:
+                    <input id="InputTrianguloBase" type="number"/>
+                    Write how long is the height of your triangle:
+                    <input  id="alturaTriangulo" type="number">
+                    <button type="button" onclick="calcularPerimetroTriangulo()">
+                        Calculate the perimeter
+                    </button>
+                </label>    
+                    <button type="button" onclick="calcularAreaTriangulo()">
+                        Calculate area 
+                    </button>
+            </form>
+        </div>
+
+
+
+        <div class="seccionCirculo">
+            <h2> Calculate the area and perimeter of a Circle</h2>
+            <form class="form-circulo">
+                <img src="https://cdn.dribbble.com/users/878034/screenshots/9074678/circle6dribbbler_still_2x.gif?compress=1&resize=400x300" alt="circle">
+                <label for="">
+                    Write how long the radius of your circle is 
+                    <input id="radioCirculo" type="numer">
+                    <button type="button" onclick="calcularPerimetroCirculo()">
+                        Calculate the perimeter 
+                    </button>
+                </label>
+                <button type="button" onclick="calcularAreaCirculo()">
+                    Calculate area 
+                </button>
+            </form>
+        </div>
+
+
+        <div class="seccionTrianguloIsosceles">
+            <h2>Calculate the height of your isosceles triangle</h2>
+            <form class="form-isosceles-triangulo">
+                <img src="https://thumbs.dreamstime.com/b/isosceles-triangle-icon-neon-style-one-geometric-figure-collection-can-be-used-ui-ux-black-background-126541131.jpg" alt="isosceles triangle">
+                <label for="IsLado1">
+                    Write how long the first side of your triangle is:
+                    <input id="IsLado1" type="number"/> 
+                </label>
+                <label for="IsLado2">
+                    Write how long the second side of your triangle is:
+                    <input id="IsLado2" type="number"/>
+                </label>
+                <label for="IsBase">
+                    Write how long the base of your triangle is:
+                    <input id="IsBase" type="number"/>
+                </label>
+                    <button type="button" onclick="calcularAlturaIsTriangulo()">
+                        Calculate the height
+                    </button>
+            </form>
+        </div>
+
+
+    </div>    
+    <script src="./figuras.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+.encabezado {
+    color: white;
+    margin: auto;
+    width: 90%;
+    display: grid;
+    grid-auto-columns: 1fr;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 3px dashed white;
+    gap: 5px;
+}
+.figuras-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    color: white;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 0;
+}
+.seccionCuadrado {
+    width: 300px;
+    height: 520px;
+    border: 2px solid white;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    grid-template-rows: auto;
+}
+.form-cuadrado img {
+    width: 290px;
+    height: 290px;
+    object-fit: cover;
+}
+.seccionTriangulo {
+    width: 300px;
+    height: 740px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.form-triangulo img {
+    width: 290px;
+    height: 290px;
+}
+.seccionCirculo {
+    width: 300px;
+    height: 520px;
+    border: 2px solid white;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.form-circulo img {
+    width: 290px;
+    height: 290px;
+    object-fit: cover;
+}
+input {
+    background-color: gray;
+    border: 1px solid white;
+    color: white;
+    width: 90%;
+    cursor: pointer;
+    font-weight: bold;
+    height: 18px;
+    margin: 10px 0 10px 0;
+}
+button {
+    background-color: gray;
+    border-radius: 8px;
+    border: 1px solid white;
+    color: white;
+    width: 80%;
+    cursor: pointer;
+    font-weight: bold;
+    height: 30px;
+    margin: 10px 0 10px 0;
+}
+.seccionTrianguloIsosceles {
+    width: 300px;
+    height: 740px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.seccionTrianguloIsosceles img  {
+    width: 290px;
+    height: 290px;
+}
